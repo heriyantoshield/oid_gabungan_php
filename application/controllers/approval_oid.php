@@ -11,11 +11,17 @@ class approval_oid extends CI_Controller {
 
 	public function afiliasi_index()
 	{
-		$this->load->view('page/approval_oid/hapus_afiliasi', $session_data);
+		$session_data['menu'] = [
+			'approval_oid/manage_afiliasi'
+		];
+		$this->load->view('page/approval_oid/manage_afiliasi', $session_data);
 	}
 
 	public function group_index()
 	{
+		$session_data['menu'] = [
+			'approval_oid/manage_group'
+		];
 		$this->load->view('page/approval_oid/manage_group', $session_data);
 	}
 

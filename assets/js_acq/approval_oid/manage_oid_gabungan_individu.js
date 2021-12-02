@@ -58,7 +58,7 @@ app.OidGabIndividu = {
 
         $('#btn-save-upload-document').click(function() {
         	if($('#btn-choose-file-upload-document')[0].files[0] == undefined){
-				alert_error("Tidak dapat menyimpan pengajuan. Silakan upload dokumen terlebih dahulu");
+				alert_error("Tidak dapat menyimpan pengajuan. Silakan melengkapi data terlebih dahulu");
 			}
 			else if ($("#buttonUpload").val() == 0){
 				alert_error("Tidak dapat menyimpan pengajuan. Silakan upload dokumen terlebih dahulu");
@@ -66,6 +66,9 @@ app.OidGabIndividu = {
 			else if($('#btn-choose-file-upload-document')[0].files[0] != undefined && $("#buttonUpload").val() == 1){
 				alert_info("Berhasil Disimpan!");
 				$('#modal-update-status').modal('hide');
+			}
+			else{
+				alert_error("Gagal menyimpan pengajuan");
 			}
         });
 
@@ -198,8 +201,10 @@ app.OidGabIndividu = {
 				alert_info("Berhasil Disimpan!");
 			}
 		}
-
-
+		
+		else{
+			alert_error("Gagal upload file. Silakan ulangi proses upload");
+		}
 		
 	},
 
