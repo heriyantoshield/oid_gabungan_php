@@ -65,6 +65,39 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item <?php echo ($this->uri->segment(1) == 'C_lead_form') || ($this->uri->segment(1) == 'C_muf_dananow') ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Report OID
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= site_url('report_oid/afiliasi_index') ?>" class="nav-link <?php echo ($this->uri->segment(1) == 'index') ? 'active' : '' ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Afiliasi</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= site_url('report_oid/group_index') ?>" class="nav-link <?php echo ($this->uri->segment(1) == 'C_lead_form/index_mos') ? 'active' : '' ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Group</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= site_url('report_oid/individu_index') ?>" class="nav-link <?php echo ($this->uri->segment(1) == 'index') ? 'active' : '' ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Individu</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
             <!-- end of menu lead form -->
           </ul>
         </nav>
