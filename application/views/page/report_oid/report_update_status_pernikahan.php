@@ -27,7 +27,7 @@
                   <label>Periode:</label>
                 </div>
                 <div class="col-md-9">
-                  <input type="date" class="form-control inp-date-from" id="inp-date-periode">
+                  <input type="date" class="form-control inp-date-from" id="inp-date-periode-report-pernikahan">
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@
                     <label>Sampai:</label>
                   </div>
                   <div class="col-md-9">
-                    <input type="date" class="form-control inp-date-to" id="inp-date-sampai">
+                    <input type="date" class="form-control inp-date-to" id="inp-date-sampai-report-pernikahan">
                   </div>
               </div>
             </div>
@@ -45,11 +45,11 @@
           </div>
           <div class="row" style="margin-top: 10px;">
             <div class="col-md-1">
-              <input type="button" class="btn btn-primary" id="btn-cari-tanggal" value="Cari">
+              <input type="button" class="btn btn-primary btn-sm" id="btn-cari-status-pernikahan" value="Cari">
             </div>
           </div>
 
-          <table id="table-list-alamat" class="table" width="100%">
+          <table id="table-report-status-pernikahan" class="table" width="100%">
               <thead>
                 <tr>
                   <th>No</th>

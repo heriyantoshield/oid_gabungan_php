@@ -15,65 +15,58 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-md-6">
-                                <h5 style="text-align:Left; text-decoration: underline;">DETAIL REPORT HAPUS AFILIASI</h5>
+                                <h5 style="text-align:Left; text-decoration: underline;">DETAIL REPORT UPDATE STATUS PERNIKAHAN</h5>
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-3"></div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row" style="margin-top:20px;">
                         <div class="col-md-6">
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Tanggal Pengajuan</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-tgl-pengajuan">
+                                        <input type="text" class="form-control inp-update-status-pernikahan" id="inp-tgl-pengajuan" readonly>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">NPWP Perusahaan</label>
+                                <label class="col-sm-4 col-form-label">No Identitas</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-npwp-perusahaan">
+                                        <input type="text" class="form-control inp-update-status-pernikahan" id="inp-no-identitas" readonly>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Nama Perusahaan</label>
+                                <label class="col-sm-4 col-form-label">Nama</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-nama-perusahaan">
+                                        <input type="text" class="form-control inp-update-status-pernikahan" id="inp-nama" readonly>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">No Identitas Afiliasi</label>
+                                <label class="col-sm-4 col-form-label">No Identitas Pasangan</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-no-identitas-afiliasi">
+                                        <input type="text" class="form-control inp-update-status-pernikahan" id="inp-no-identitas-pasangan" readonly>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Nama Afiliasi</label>
+                                <label class="col-sm-4 col-form-label">Nama Pasangan</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-nama-afiliasi">
+                                        <input type="text" class="form-control inp-update-status-pernikahan" id="inp-nama-pasangan" readonly>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Posisi</label>
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control inp-afiliasi" id="inp-posisi">
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -95,7 +88,7 @@
                         </div>
                     </div>
 
-                    <table id="table-list-alamat" class="table" width="100%">
+                    <table id="table-detail-report-update-pernikahan" class="table table-bordered table-hover" width="100%">
                         <thead>
                             <tr>
                                 <th>No</th>
@@ -109,7 +102,7 @@
                     <div class="row" style="margin-top: 10px;">
                         <div class="col-md-12">
                             <div class="col-md-2">
-                                <input type="button" class="btn btn-primary btn-sm" id="btn-ok" value="Ok">
+                                <input type="button" class="btn btn-primary btn-sm" id="btn-ok-pernikahan" value="Ok">
                             </div>
                         </div>
                     </div>

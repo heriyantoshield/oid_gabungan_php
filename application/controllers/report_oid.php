@@ -12,7 +12,7 @@ class report_oid extends CI_Controller{
     public function group_index()
 	{
 		$session_data['menu'] = [
-			'report_oid/manage_group'
+			'report_oid/report_hapus_member_group'
 		];
 		$this->load->view('page/report_oid/report_hapus_member_group', $session_data);
 	}
@@ -22,7 +22,7 @@ class report_oid extends CI_Controller{
 		$session_data['menu'] = [
 			'report_oid/report_update_status_pernikahan'
 		];
-		$this->load->view('page/approval_oid/report_update_status_pernikahan', $session_data);
+		$this->load->view('page/report_oid/report_update_status_pernikahan', $session_data);
 	}
 
 }
