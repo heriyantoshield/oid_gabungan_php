@@ -9,22 +9,22 @@ class approval_oid_api extends CI_Controller {
 		$this->load->model('models');
 	}
 
-	public function search_list_oid_gabungan_individu(){
-        $link = 'getListOidGabunganIndividu';
-        $search = array(
-            "nik_oid_gabungan_individu" => strtoupper($this->input->post('nik_oid_gabungan_individu'))
-        );
-        // var_dump($search);
-        // exit;
-        $data = $this->models->crud_approval_oid($search, $link);
+	// public function search_list_oid_gabungan_individu(){
+    //     $link = 'getListOidGabunganIndividu';
+    //     $search = array(
+    //         "nik_oid_gabungan_individu" => strtoupper($this->input->post('nik_oid_gabungan_individu'))
+    //     );
+    //     // var_dump($search);
+    //     // exit;
+    //     $data = $this->models->crud_approval_oid($search, $link);
 
-        if (strpos($data, 'Execution exception') > 0)
-            $this->output->set_output("timeout");
-        else
-        {
-            $this->output->set_content_type('application/json');
-            $this->output->set_output(json_encode($data));
-        }
-    }
+    //     if (strpos($data, 'Execution exception') > 0)
+    //         $this->output->set_output("timeout");
+    //     else
+    //     {
+    //         $this->output->set_content_type('application/json');
+    //         $this->output->set_output(json_encode($data));
+    //     }
+    // }
 
 }

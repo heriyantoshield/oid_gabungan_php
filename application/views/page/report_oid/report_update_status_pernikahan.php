@@ -19,7 +19,6 @@
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
           </div>
-
           <div class="row" style="margin-top:20px;">
             <div class="col-md-3">
               <div class="input-group">
@@ -45,24 +44,24 @@
           </div>
           <div class="row" style="margin-top: 10px;">
             <div class="col-md-1">
-              <input type="button" class="btn btn-primary btn-sm" id="btn-cari-status-pernikahan" value="Cari">
+              <input type="button" class="btn btn-primary btn-sm" id="btn-report-update-status-pernikahan" value="Cari">
             </div>
           </div>
 
           <table id="table-report-status-pernikahan" class="table" width="100%">
-              <thead>
-                <tr>
-                  <th>No</th>
-                  <th>Tgl Pengajuan</th>
-                  <th>No Identitas</th>
-                  <th>Nama</th>
-                  <th>No Identitas Pasangan</th>
-                  <th>Nama Pasangan</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-            </table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Tgl Pengajuan</th>
+                <th>No Identitas</th>
+                <th>Nama</th>
+                <th>No Identitas Pasangan</th>
+                <th>Nama Pasangan</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+          </table>
 
         </div>
         <!-- /.card-body -->
@@ -76,5 +75,6 @@
 </div>
 <!-- /.content-wrapper -->
 <?php $this->load->view('modal/v_modal_alert'); ?>
+<?php $this->load->view('modal/modal_detail_report_update_status_pernikahan'); ?>
 <?php $this->load->view('layout/footer'); ?>
 <?php $this->load->view('layout/footer_end'); ?>

@@ -15,15 +15,13 @@ app.OidGabIndividu.init();
 
 
 app.OidGabIndividu = {
-	controller: 'approval_oid/',
-	api: 'approval_oid_api/',
+	controller: 'manage_oid/',
+	api: 'manage_oid_api/',
 	elm: {},
 
 	init: function () {
         var file = this;
-        // var buttonUpload = "0";
-        // var tbl_list_oid_gabungan_individu = file.table_list_oid_gabungan_individu;
-
+        
         $('#btn-cari-oid-gabungan-individu').click(function() {
             var file = app.OidGabIndividu;
             file.buttonCariOidGabIndividu();

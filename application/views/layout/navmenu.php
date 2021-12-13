@@ -44,7 +44,7 @@
                 </li>
               <!-- </ul> -->
               <li class="nav-item">
-                  <a href="<?= site_url('approval_oid/approval_update_status_pernikahan') ?>" class="nav-link <?php echo ($this->uri->segment(1) == 'index') ? 'active' : '' ?>">
+                  <a href="<?= site_url('approval_oid/individu_index') ?>" class="nav-link <?php echo ($this->uri->segment(1) == 'index') ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-book"></i>
                     <p>Approval OID Individu</p>
                   </a>
